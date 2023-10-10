@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+   padding: 0px;
+   margin: 0px; 
+}
+.header
+{
+    width: 100%;
+        background-color:black;
+   
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding-left: 2.5%;
+    padding-right:2.5%;
+    padding-top: 10px;
+    text-align:left;
+    display: flex;
+    justify-content: space-between;
+}
+.nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.heading
+{
+    height:250px;
+    width: 100%;
+    background-image: url(./moon.png);
+    background-position:center;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.definition
+{
+    width: 80%;
+    padding: 30px 10%;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 35px;
+    font-size:medium;
+    color: whitesmoke;
+    background-color:black;
+}
+.def-head
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.milestones
+{
+    display:flex;
+    background-image: url(./pexels-aleksandar-pasaric-1694000.jpg);
+    flex-direction: row;
+    column-gap: 5%;
+    row-gap: 25px;
+    padding: 30px 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.milestone
+{
+    background-color: white;
+    width:20%;
+    height: 300px;
+    padding:30px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:30px;
+    border-radius: 10px;
+}
+.image
+{
+    height:150px;
+    width:60%;
+}
+.achievements
+{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 200px;  
+    padding-top: 70px; 
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+.titles
+{
+    font-weight: 800;
+}
+
+.timelines
+{
+    width:100%;
+    background-image: url(./pexels-aleksandar-pasaric-1694000.jpg);
+
+}
+
+.timeline-container {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.timeline-event {
+    position: relative;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-left: 4px solid #333;
+    border-radius: 4px;
+}
+
+.timeline-event::before {
+    content: attr(data-year);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    margin: 0;
+}
